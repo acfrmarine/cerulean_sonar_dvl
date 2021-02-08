@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<package format="2">
+
+    <name>cerulean_sonar_dvl_msgs</name>
+    <version>0.0.1</version>
+    <description>Messages for the Cerulean Sonar DVL</description>
+    <maintainer email="brenton.leighton@sydney.edu.au">Brenton Leighton</maintainer>
+    <license>BSD-3-Clause</license>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <build_depend>message_generation</build_depend>
+    <build_export_depend>message_runtime</build_export_depend>
+    
+    <depend>std_msgs</depend>
+
+    <exec_depend>message_runtime</exec_depend>
+
+</package>
+
