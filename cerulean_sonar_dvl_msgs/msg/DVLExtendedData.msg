@@ -6,6 +6,11 @@ float32 roll
 float32 pitch
 float32 yaw
 
+int8 data_skips
+
+float32 velocity_x
+float32 velocity_y
+
 float32 altitude
 
 # Channel (beam) data
