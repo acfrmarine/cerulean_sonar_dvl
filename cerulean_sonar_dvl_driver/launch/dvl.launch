@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+
+    <group ns="dvl">
+
+        <node pkg="cerulean_sonar_dvl_driver" type="dvl_nmea_sentence_parser"
+              name="dvl_nmea_sentence_parser" output="screen"
+              required="true"/>
+
+    </group>
+
+</launch>
+
