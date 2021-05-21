@@ -33,11 +33,11 @@ public:
 
 
     // Receives the sonar altitude
-    void dvlCallback(const sensor_msgs::Range::ConstPtr& msg)
+    void dvlCallback(const cerulean_sonar_dvl_msgs::DVLExtendedData::ConstPtr& msg)
     {
         sensor_msgs::Range range_msg;
         range_msg.header = msg->header;
-        range_msg.altitude = msg->altitude;
+        range_msg.range = msg->altitude;
         range_msg.max_range = 40.0;
         range_msg.min_range = 0.3;
         range_msg.field_of_view =0.523599; // 30 degrees 
@@ -60,9 +60,9 @@ private:
 int main(int argc, char **argv)
 {
 
-    ros::init(argc, argv, "altitude_select");
+    ros::init(argc, argv, "dvl_to_range");
 
-    AltitudeSelect selector;
+    DvlToRange dvl_to_range;
 
     ros::spin();
 

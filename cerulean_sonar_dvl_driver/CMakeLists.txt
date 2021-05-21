@@ -19,7 +19,7 @@ add_dependencies(dvl_nmea_sentence_parser ${catkin_EXPORTED_TARGETS})
 target_include_directories(dvl_nmea_sentence_parser SYSTEM PRIVATE ${catkin_INCLUDE_DIRS})
 target_link_libraries(dvl_nmea_sentence_parser ${catkin_LIBRARIES})
 
-add_executable(dvl_to_range src/dvl_nmea_sentence_parser.cpp)
+add_executable(dvl_to_range src/dvl_to_range.cpp)
 add_dependencies(dvl_to_range ${catkin_EXPORTED_TARGETS})
 target_include_directories(dvl_to_range SYSTEM PRIVATE ${catkin_INCLUDE_DIRS})
 target_link_libraries(dvl_to_range ${catkin_LIBRARIES})
