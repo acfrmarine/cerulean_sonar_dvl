@@ -7,6 +7,10 @@
         <node pkg="cerulean_sonar_dvl_driver" type="dvl_nmea_sentence_parser"
               name="dvl_nmea_sentence_parser" output="screen"
               required="true"/>
+        
+        <node pkg="cerulean_sonar_dvl_driver" type="dvl_to_range"
+              name="dvl_to_range" output="screen"
+              required="true"/>
 
     </group>
 
