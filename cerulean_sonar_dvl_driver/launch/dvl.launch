@@ -10,7 +10,9 @@
         
         <node pkg="cerulean_sonar_dvl_driver" type="dvl_to_range"
               name="dvl_to_range" output="screen"
-              required="true"/>
+              required="true">
+              <remap from="dvl_altitude" to="/sonar_sensor/range"/>
+        </node>
 
     </group>
 
